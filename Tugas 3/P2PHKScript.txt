@@ -1,4 +1,4 @@
-#PAY TO PUBLIC KEY HASH
+PAY TO PUBLIC KEY HASH
 
 Pay-to-PubKey-Hash (P2PKH) contract is used to send bitcoins to a bitcoin address.
 It is the most common contract on the Bitcoin network.
