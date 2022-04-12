@@ -46,8 +46,11 @@ type ChainHeaderReader interface {
 	// GetTd untuk total difficulty dari database berdasarkan hash dan nomor.
 	GetTd(hash common.Hash, number uint64) *big.Int
 }
+// Secara keseluruhan Interface ChainHeaderReader Untuk melakukan verifikasi header diperlukan pengembilan header dari rantai lokal,
+// dari database dengan nomor, dari database dengan hash dan mengambil total kesulitan dari database dengan hash dan nomor.
 
-// ChainHeaderReader adalah sekumpulan kecil metode yang diperlukan untuk mengakses blockchain lokal selama verifikasi header
+
+// ChainReader adalah sekumpulan kecil metode yang diperlukan untuk mengakses blockchain lokal selama verifikasi header
 type ChainReader interface {
 	ChainHeaderReader
 
@@ -57,7 +60,7 @@ type ChainReader interface {
 
 // Engine adalah mesin konsensus agnostik algoritma.
 type Engine interface {
-	// Penulis mengambil alamat Ethereum dari akun yang mencetak blok yang diberikan,
+  // Penulis mengambil alamat Ethereum dari akun yang mencetak blok yang diberikan,
   // yang mungkin berbeda dari header coinbase jika mesin konsensus didasarkan pada tanda tangan.
 	Author(header *types.Header) (common.Address, error)
 
@@ -66,7 +69,7 @@ type Engine interface {
 	VerifyHeader(chain ChainHeaderReader, header *types.Header, seal bool) error
 
 	// VerifyHeaders mirip dengan VerifyHeader, tetapi VerifyHeaders memverifikasi sekumpulan header secara bersamaan.
-  // VerifyHeaders mengembalikan quit channel untuk membatalkan operasi dan 
+        // VerifyHeaders mengembalikan quit channel untuk membatalkan operasi dan 
 	// a results channel untuk mengambil async verifications
 	VerifyHeaders(chain ChainHeaderReader, headers []*types.Header, seals []bool) (chan<- struct{}, <-chan error)
 
