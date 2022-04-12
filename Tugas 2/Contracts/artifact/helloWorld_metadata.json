@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "nCoin",
+						"type": "uint256"
+					}
+				],
+				"name": "addCoin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "viewTotalCoin",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/telyu.sol": "helloWorld"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/telyu.sol": {
+			"keccak256": "0xcce652078882e3415e204c0bfa6cbb432c5d4501873a48a158d686d0e4c1808b",
+			"urls": [
+				"bzz-raw://8b062142be10976c9fd2147f014f2bb3dc4e9fa1bd3fd0370d09337334ec7d4c",
+				"dweb:/ipfs/QmZ81GzkZ3cQ6LeWocKi34PSCQiFDAzoivJsK85dyT72LF"
+			]
+		}
+	},
+	"version": 1
+}
