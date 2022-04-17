@@ -1,6 +1,6 @@
-#UTS BLOCKCHAIN - TELKOM UNIVERSITY
+<h1>UTS BLOCKCHAIN - TELKOM UNIVERSITY </h1>
 
 NAMA : DELATIFA PUTRI SUGANDI
 NIM : 1103194080
 
-TECHNICAL DOCUMENTATION : <a href="https://drive.google.com/file/d/1S2eFp7zUpWT-o_KHHmuEqQEISZI9Ji3W/view?usp=sharing" rel="nofollow">Link Documentation Here</a>
+TECHNICAL DOCUMENTATION : <a href =" rel="nofollow">Link Documentation Here</a>
